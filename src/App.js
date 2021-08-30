@@ -12,16 +12,15 @@ function App() {
       <Router>
         <Link to='/books'>Books</Link>
         <Link to='/catagories'>Catagories</Link>
-      <Switch>
-        <Route path="/books">
-          <Books />
-        </Route>
-        <Route path="/catagories">
-          <Catagories />
-        </Route>
-        
-      </Switch>
-
+        <Switch>
+          <Route path="/books">
+            <Books />
+          </Route>
+          <Route path="/catagories">
+            <Catagories />
+          </Route>
+          <Redirect from='/' to='/books'/>
+        </Switch>
       </Router>
 
 
