@@ -30,11 +30,12 @@ export default function Books() {
       id: UUID(),
       title,
       author,
+      category: '',
     };
     dispatch(addBookToStore(newBook));
   };
 
-  const removeFromBookStore = (e) => {
+  const deleteBookFromStore = (e) => {
     dispatch(removeBookFromStore({ id: e.target.id }));
   };
 
@@ -45,8 +46,8 @@ export default function Books() {
         <ul>
           { books.map((book) => (
             <li key={book.id}>
-              <span>{book.title}</span>
-              <button id={book.id} type="button" onClick={removeFromBookStore}>Delete</button>
+              <span className="mr-10">{book.title}</span>
+              <button id={book.id} type="button" onClick={deleteBookFromStore}>Delete</button>
             </li>
           ))}
         </ul>
