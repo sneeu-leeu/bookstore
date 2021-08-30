@@ -34,18 +34,3 @@ export const addNewBook = async (book) => {
   const status = await response.text();
   return status;
 };
-
-export const removeExistingBook = async (book) => {
-  const appId = localStorage.getItem('appId');
-  const response = await fetch(`${BASE_URL}/apps/${appId}/books/${book.id}`, {
-    method: 'DELETE',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      item_id: book.id,
-    }),
-  });
-  const status = await response.text();
-  return status;
-};
