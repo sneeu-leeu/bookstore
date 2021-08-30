@@ -7,16 +7,16 @@ import './App.css';
 
 function App() {
   return (
-    <div className="BookstoreContain">
-      <h1>Bookstore CMS</h1>
+    <div className="App">
+      <h1>BookStore CMS</h1>
       <Router>
-        <Link to="/books">Books</Link>
-        <Link to="/catagories">Catagories</Link>
+        <Link to="/books" className="mr-10">Books</Link>
+        <Link to="/categories">Categories</Link>
         <Switch>
           <Route path="/books">
             <Books />
           </Route>
-          <Route path="/catagories">
+          <Route path="/categories">
             <Catagories />
           </Route>
           <Redirect from="/" to="/books" />
