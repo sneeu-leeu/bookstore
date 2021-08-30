@@ -1,13 +1,21 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { v4 as UUID } from 'uuid';
-import { allBooks, addBook, removeBook } from '../redux/books/books';
+import { initialize } from '../API/bookstore';
+import {
+  allBooks, addBookToStore, removeBookFromStore, fetchBooks,
+} from '../redux/books/books';
 
 export default function Books() {
   const dispatch = useDispatch();
   const books = useSelector(allBooks);
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
+
+  useEffect(async () => {
+    await initialize();
+    dispatch(fetchBooks);
+  }, [initialize]);
 
   const setBookTitle = (e) => {
     setTitle(e.target.value);
@@ -17,17 +25,17 @@ export default function Books() {
     setAuthor(e.target.value);
   };
 
-  const submitBookToStore = () => {
+  const submitToBookStore = () => {
     const newBook = {
       id: UUID(),
       title,
       author,
     };
-    dispatch(addBook(newBook));
+    dispatch(addBookToStore(newBook));
   };
 
-  const removeBookFromStore = (e) => {
-    dispatch(removeBook({ id: e.target.id }));
+  const removeFromBookStore = (e) => {
+    dispatch(removeBookFromStore({ id: e.target.id }));
   };
 
   return (
@@ -38,7 +46,7 @@ export default function Books() {
           { books.map((book) => (
             <li key={book.id}>
               <span>{book.title}</span>
-              <button id={book.id} type="button" onClick={removeBookFromStore}>Delete</button>
+              <button id={book.id} type="button" onClick={removeFromBookStore}>Delete</button>
             </li>
           ))}
         </ul>
@@ -51,7 +59,7 @@ export default function Books() {
         <input placeholder="Author" onChange={setBookAuthor} />
         <br />
         <br />
-        <button type="button" onClick={submitBookToStore}>Add Book</button>
+        <button type="button" onClick={submitToBookStore}>Add Book</button>
       </form>
     </div>
   );
