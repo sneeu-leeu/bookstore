@@ -4,6 +4,7 @@ import {
 import Books from './components/books';
 import Catagories from './components/catagories';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
