@@ -60,14 +60,14 @@ export default function Books() {
                 <div className="d-flex align-items-center border-end">
                   <div className="progress-oval d-inline-block" />
                   <span>
-                    <div className="percent-complete">64%</div>
+                    <div className="percent-complete">32%</div>
                     <div className="completed">Completed</div>
                   </span>
                 </div>
 
                 <div className="d-flex flex-column">
                   <div className="current-chapter">CURRENT CHAPTER</div>
-                  <div className="current-lesson">Chapter 17</div>
+                  <div className="current-lesson">Chapter 9</div>
                   <button type="button" className="btn btn-update">UPDATE PROGRESS</button>
                 </div>
               </div>
