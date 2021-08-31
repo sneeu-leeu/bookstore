@@ -1,5 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
+# PLEASE NOTE:
+## DUE TO THE EXTREME SPECIFIC MEASUREMENTS, THIS PROJECT IS BUILT ON 75% Zoom in the CREATORS browser. Please find the ZOOM best for your screen.
+
 # Bookstore
 
 > This is a SPA in which you find and read Books
@@ -14,7 +17,7 @@
 
 ## Live Demo
 
-[Live Demo]()
+[Live Demo](https://affectionate-knuth-6b03ed.netlify.app/books)
 
 ### Setup
 
@@ -25,7 +28,7 @@ Click [here](https://github.com/sneeu-leeu/bookstore) to go to the repo and clon
 cd into the repo by typing
 $ cd ./your-path/bookstore/
 
-$ git checkout feature/components
+$ git checkout style
 
 $ npm install
 
