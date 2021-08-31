@@ -7,21 +7,25 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1>BookStore CMS</h1>
-      <Router>
-        <Link to="/books" className="mr-10">Books</Link>
-        <Link to="/categories">Categories</Link>
-        <Switch>
-          <Route path="/books">
-            <Books />
-          </Route>
-          <Route path="/categories">
-            <Catagories />
-          </Route>
-          <Redirect from="/" to="/books" />
-        </Switch>
-      </Router>
+    <div className="big-cont">
+      <div className="App">
+        <Router>
+          <header className="d-flex align-centre">
+            <h1 className="navhead">BookStore CMS</h1>
+            <Link to="/books" className="navLink">Books</Link>
+            <Link to="/categories" className="navLink op50 m-left-nav">Categories</Link>
+          </header>
+          <Switch>
+            <Route path="/books">
+              <Books />
+            </Route>
+            <Route path="/categories">
+              <Catagories />
+            </Route>
+            <Redirect from="/" to="/books" />
+          </Switch>
+        </Router>
+      </div>
     </div>
   );
 }
