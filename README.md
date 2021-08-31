@@ -4,6 +4,8 @@
 
 > This is a SPA in which you find and read Books
 
+[Screen Shot](img/grab.png)
+
 ## Built With
 
 - React/JS
@@ -12,8 +14,7 @@
 
 ## Live Demo
 
-- We are under construction and not yet ready to share this experience with you...
-Check back soon!
+[Live Demo]()
 
 ### Setup
 
