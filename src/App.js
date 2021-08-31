@@ -8,25 +8,23 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="big-cont">
-      <div className="App">
-        <Router>
-          <header className="d-flex align-centre">
-            <h1 className="navhead">BookStore CMS</h1>
-            <Link to="/books" className="navLink">Books</Link>
-            <Link to="/categories" className="navLink op50 m-left-nav">Categories</Link>
-          </header>
-          <Switch>
-            <Route path="/books">
-              <Books />
-            </Route>
-            <Route path="/categories">
-              <Catagories />
-            </Route>
-            <Redirect from="/" to="/books" />
-          </Switch>
-        </Router>
-      </div>
+    <div className="App">
+      <Router>
+        <header className="header bg-white p-3 d-flex align-items-center mb-4">
+          <h1 className="header-text d-inline-block">BookStore CMS</h1>
+          <Link to="/books" className=" link">BOOKS</Link>
+          <Link to="/categories" className="link">CATEGORIES</Link>
+        </header>
+        <Switch>
+          <Route path="/books">
+            <Books />
+          </Route>
+          <Route path="/categories">
+            <Catagories />
+          </Route>
+          <Redirect from="/" to="/books" />
+        </Switch>
+      </Router>
     </div>
   );
 }
