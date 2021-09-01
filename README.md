@@ -7,7 +7,7 @@
 
 > This is a SPA in which you find and read Books
 
-[Screen Shot](./img/grab.png)
+[Screen Shot](img/grab.png)
 
 ## Built With
 
