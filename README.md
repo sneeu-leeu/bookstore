@@ -3,11 +3,13 @@
 # PLEASE NOTE:
 ## DUE TO THE EXTREME SPECIFIC MEASUREMENTS, THIS PROJECT IS BUILT ON 75% Zoom in the CREATORS browser. Please find the ZOOM best for your screen.
 
+=======
+
 # Bookstore
 
 > This is a SPA in which you find and read Books
 
-[Screen Shot](./img/grab.png)
+![Homepage](./img/grab.png)
 
 ## Built With
 
