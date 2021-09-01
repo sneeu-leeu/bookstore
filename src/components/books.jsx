@@ -50,7 +50,7 @@ export default function Books() {
                 <span className="book-title">{book.title}</span>
                 <span className="book-author">{book.author}</span>
                 <span className="d-inline-block">
-                  <button id={book.id} type="button" className="btn btn-link btn-default border-end book-link ps-0">Comments</button>
+                  <button id={book.id} type="button" className="btn btn-link border-end book-link ps-0">Comments</button>
                   <button id={book.id} type="button" className="btn btn-link border-end book-link" onClick={deleteBookFromStore}>Remove</button>
                   <button id={book.id} type="button" className="btn btn-link book-link">Edit</button>
                 </span>
@@ -68,7 +68,7 @@ export default function Books() {
                 <div className="d-flex flex-column">
                   <div className="current-chapter">CURRENT CHAPTER</div>
                   <div className="current-lesson">Chapter 9</div>
-                  <button type="button" className="btn-update btn">UPDATE PROGRESS</button>
+                  <button type="button" className="btn btn-update">UPDATE PROGRESS</button>
                 </div>
               </div>
             </div>

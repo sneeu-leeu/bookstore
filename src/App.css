@@ -1,11 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&family=Roboto+Slab:wght@300;400;500;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
+.App {
+  background-color: #f5f6fa;
+  padding: 9.313rem 6.25rem;
+}
+
+.box {
+  background-color: #fafafa;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+}
+
 .header-text {
   font-family: 'Montserrat', sans-serif;
   color: #0290ff;
   font-size: 1.875rem;
-  font-weight: bold;
   margin: 0;
   padding-right: 2.563rem;
 }
@@ -65,6 +74,7 @@
 }
 
 .book-link {
+  text-decoration: none !important;
   font-family: 'RobotoSlab', serif;
   font-size: 0.875rem;
   font-weight: 300;
@@ -79,7 +89,7 @@
   border-right-color: #307bbe;
   border-left-color: white;
   border-top-color: #307bbe;
-  border-bottom-color: #379cf6;
+  border-bottom-color: white;
   transform: rotate(30deg);
   border-radius: 50%;
 }
@@ -127,15 +137,15 @@
   width: 11.5rem;
   height: 2.063rem;
   margin: 0.75rem 0 0.563rem 3.688rem;
-  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  padding: 0.3rem 0.7rem 0.5rem 1rem !important;
   border-radius: 3px;
-  background-color: #0290ff;
+  background-color: #0290ff !important;
   font-family: 'RobotoSlab', serif;
   font-size: 0.813rem;
   font-weight: 300;
   letter-spacing: 0.5px;
   text-align: center;
-  color: #fff;
+  color: #fff !important;
 }
 
 .add-new-book {
@@ -179,9 +189,9 @@
   height: 2.813rem;
   padding: 0.801rem 1.188rem 0.886rem 1.375rem;
   border-radius: 3px;
-  background-color: #0290ff;
+  background-color: #0290ff !important;
   font-family: 'RobotoSlab', serif;
   font-size: 0.813rem;
   letter-spacing: 0.5px;
-  color: #fff;
+  color: #fff !important;
 }
