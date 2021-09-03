@@ -86,23 +86,23 @@
 
 .progress-oval {
   position: relative;
-  border: 4px solid;
-  width: 4.25rem;
-  height: 4.25rem;
+  border: 3px solid;
+  width: 3rem;
+  height: 3rem;
   border-right-color: #307bbe;
-  border-left-color: white;
+  border-left-color: rgb(204, 204, 204);
   border-top-color: #307bbe;
-  border-bottom-color: white;
+  border-bottom-color: rgb(204, 204, 204);
   transform: rotate(30deg);
   border-radius: 50%;
 }
 
 .percent-complete {
-  width: 4.25vw;
-  height: 2.438rem;
+  width: 3.25vw;
+  height: 1.438rem;
   margin: 0.063rem 5.75rem 0 0.688rem;
   font-family: 'Montserrat', sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: lighter;
 }
 
