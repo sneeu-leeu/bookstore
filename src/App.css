@@ -79,7 +79,7 @@
 .book-link {
   text-decoration: none !important;
   font-family: 'RobotoSlab', serif;
-  font-size: 0.875rem;
+  font-size: 0.875rem !important;
   font-weight: 300;
   color: #4386bf;
 }
